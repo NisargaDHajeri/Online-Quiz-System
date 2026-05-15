@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Create Account</title>
+    <style>
+        body {
+            background: #0e0e0e;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .box {
+            background: #111;
+            padding: 30px;
+            border-radius: 8px;
+            width: 350px;
+            text-align: center;
+            box-shadow: 0 0 15px rgba(255, 255, 0, 0.2);
+        }
+
+        input {
+            width: 90%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 6px;
+            border: none;
+            font-size: 16px;
+        }
+
+        button {
+            width: 95%;
+            padding: 12px;
+            background-color: #ffcc00;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #ffdb4d;
+        }
+
+        a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <h2>Create Account</h2>
+
+        <form action="register.php" method="POST">
+            <input type="text" name="username" placeholder="Enter Username" required>
+            <input type="password" name="password" placeholder="Enter Password" required>
+            <button type="submit">Register</button>
+        </form>
+
+        <p>Already have an account? <a href="login.php">Login</a></p>
+    </div>
+
+</body>
+
+</html>

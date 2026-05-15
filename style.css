@@ -1,0 +1,123 @@
+:root {
+    --bg: #0b0b0b;
+    --yellow: #f6c90e;
+    --muted: #9a9a9a
+}
+
+body {
+    background: linear-gradient(180deg, #070707 0%, #111 100%);
+    color: #eee;
+    font-family: system-ui, Segoe UI, Arial;
+    margin: 0;
+}
+
+.navbar {
+    background: #0b0b0b !important;
+}
+
+#mainNav {
+    background: linear-gradient(90deg, var(--bg), #111);
+}
+
+.text-yellow {
+    color: var(--yellow) !important;
+}
+
+.card {
+    background: #0f0f0f;
+    color: #eee;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.btn-dark {
+    background: #111;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.btn-warning {
+    background: var(--yellow);
+    color: #111;
+    border: none;
+}
+
+.list-group-item {
+    background: #0f0f0f;
+    color: #eee;
+    border: 1px solid rgba(255, 255, 255, 0.02);
+}
+
+.qblock {
+    background: #0b0b0b;
+}
+
+input.form-control,
+textarea.form-control,
+select.form-control {
+    background: #111;
+    color: #eee;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+a {
+    color: var(--yellow);
+    text-decoration: none;
+}
+
+/* --- Leaderboard medals / glow --- */
+.medal-gold {
+    background: linear-gradient(135deg, #ffd54a, #ffcc00);
+    color: #111;
+}
+
+.medal-silver {
+    background: linear-gradient(135deg, #dfe6ee, #bfc9d8);
+    color: #111;
+}
+
+.medal-bronze {
+    background: linear-gradient(135deg, #f0d8c0, #d7a87a);
+    color: #111;
+}
+
+.glow-top {
+    box-shadow: 0 12px 30px rgba(255, 204, 0, 0.12);
+    transform: translateY(-4px);
+}
+
+/* --- Review highlights --- */
+.review-correct {
+    background: #073b07 !important;
+    color: #dfffe0 !important;
+    border: 1px solid #145214 !important;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 6px;
+}
+
+.review-wrong {
+    background: #3b0707 !important;
+    color: #ffdada !important;
+    border: 1px solid #551111 !important;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 6px;
+}
+
+.review-neutral {
+    background: #1a1a1a;
+    color: #cfcfcf;
+    border: 1px solid #333;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 6px;
+}
+
+/* small UI polish */
+.leader-card {
+    transition: box-shadow .18s ease, transform .12s ease;
+}
+
+.leader-row {
+    cursor: pointer;
+}

@@ -1,0 +1,1 @@
+<?php include '../php/database.php'; session_start(); header('Content-Type: application/json'); if(!empty($_SESSION['user'])) echo json_encode(['logged'=>true,'id'=>$_SESSION['user']['id'],'username'=>$_SESSION['user']['username']]); else echo json_encode(['logged'=>false]); ?>
